@@ -42,9 +42,9 @@ if(isset($_GET["id"])){
 
 	$response = array(
 		"result" => $findPlayer,
-		"photo" => "https://pothole.ml/php/gofifa/photos/".$id.".png",
-		"club" => "https://pothole.ml/php/gofifa/clubs/".$id.".png",
-		"country" => "https://pothole.ml/php/gofifa/flags/".$id.".png",
+		"photo" => "https://potholes.ml/php/gofifa/photos/".$id.".png",
+		"club" => "https://potholes.ml/php/gofifa/clubs/".$id.".png",
+		"country" => "https://potholes.ml/php/gofifa/flags/".$id.".png",
 		"talent_array" => $talentArray
 	);
 
