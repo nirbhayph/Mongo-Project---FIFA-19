@@ -140,7 +140,7 @@ crossorigin=""></script>
                         var radius = $('#radius_range').val();
                         var country = $('#countryP').val();
 
-                          $.ajax({url: 'https://pothole.ml/php/gofifa/getGeoNearData.php?country='+country+'&distance='+radius,
+                          $.ajax({url: 'https://potholes.ml/php/gofifa/getGeoNearData.php?country='+country+'&distance='+radius,
                           success: function(result){
                             console.log(result);
                             $('#locations').val(result);
