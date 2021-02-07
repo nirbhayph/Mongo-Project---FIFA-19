@@ -649,7 +649,7 @@
         <?php if(isset($_GET["id"])) { ?>
         <script>
 
-        $.ajax({url: 'https://pothole.ml/php/gofifa/getPlayerDetails.php?id='+<?php echo $_GET["id"]; ?>,
+        $.ajax({url: 'https://potholes.ml/php/gofifa/getPlayerDetails.php?id='+<?php echo $_GET["id"]; ?>,
         success: function(result){
           console.log(result);
           var json_result = JSON.parse(result);
@@ -830,7 +830,7 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
         }});
           
         function getAllComments(){
-          $.ajax({url: 'https://pothole.ml/php/gofifa/getComments.php?id='+<?php echo $_GET["id"]; ?>,
+          $.ajax({url: 'https://potholes.ml/php/gofifa/getComments.php?id='+<?php echo $_GET["id"]; ?>,
           success: function(result){
             var getCommentTemplate = function(comment){
               return '<div class="comment"><img src="../assets/images/brand/dribbble-1.jpg" alt="" class="comment-avatar"><div class="comment-body"><div class="comment-text"><div class="comment-header"><b style="color:white; font-size:14px;">Anonymous</b></div>'+comment+'</div></div></div>';
@@ -852,7 +852,7 @@ marker.bindPopup("<img src=\""+photoLink+"\">"+"<br/><b>Hi I am "+player["Name"]
               if(commentMade === ""){
                 alert("Try again by inserting something in the message box!");
               }else{
-                $.ajax({url: 'https://pothole.ml/php/gofifa/addComment.php?id='+<?php echo $_GET["id"]; ?>+'&comment='+commentMade,
+                $.ajax({url: 'https://potholes.ml/php/gofifa/addComment.php?id='+<?php echo $_GET["id"]; ?>+'&comment='+commentMade,
                 success: function(result){
                   if(result==="Success"){
                     $('#commentMade').val("");
