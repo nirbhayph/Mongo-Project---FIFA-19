@@ -52,7 +52,7 @@
                   <div class="card-box" id="custom-search" style="display:none">
                       <h4 class="m-t-0 m-b-30 header-title">Search on any of the player parameters</h4>
 
-                      <form id="form-x" role="form" action="https://pothole.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
+                      <form id="form-x" role="form" action="https://potholes.ml/php/gofifa/getSearchResults.php" method="GET" data-parsley-validate>
                         <div class="row">
                           <div class="col-sm-4 col-xs-12">
                           <div class="form-group">
@@ -484,7 +484,7 @@
                   to: 99
                 });
 
-                $.ajax({url: 'https://pothole.ml/php/gofifa/getData.php',
+                $.ajax({url: 'https://potholes.ml/php/gofifa/getData.php',
                 success: function(result){
                   var objJSON = JSON.parse(result);
                   $('#countries').html(objJSON["countries"]);
