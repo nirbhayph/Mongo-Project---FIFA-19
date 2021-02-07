@@ -115,7 +115,7 @@
 jQuery(document).ready(function() {
   $('#form-m').submit(function(){
       $.ajax({
-        url: 'https://pothole.ml/php/gofifa/getSearchResults.php',
+        url: 'https://potholes.ml/php/gofifa/getSearchResults.php',
         type: 'GET',
         data : $('#form-m').serialize(),
         success: function(result){
